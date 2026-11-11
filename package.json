@@ -21,8 +21,7 @@
   "scripts": {
     "test": "xo && tsc --noEmit && nyc ava",
     "release": "np",
-    "build": "del-cli dist && tsc",
-    "prepare": "npm run build"
+    "build": "del-cli dist && tsc"
   },
   "files": [
     "dist/source"
@@ -137,5 +136,11 @@
       "node/prefer-global/url": "off",
       "node/prefer-global/url-search-params": "off"
     }
+  },
+  "overrides": {
+    "http-cache-semantics": ">=4.3.0"
+  },
+  "resolutions": {
+    "http-cache-semantics": ">=4.3.0"
   }
 }
